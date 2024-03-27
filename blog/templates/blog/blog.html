@@ -1,0 +1,7 @@
+{% extends "global/global.html" %}
+{% block text %} {{text}} {% endblock text %}
+{% block post %}
+    {% for post in posts %}
+        {% include "global/partials/postblock.html" %}
+    {% endfor %}
+{% endblock post %}
